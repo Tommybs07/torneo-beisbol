@@ -227,131 +227,191 @@ table tr:nth-child(odd) {
 
 
 </section>
+<style>
+  .standing-container {
+    margin: 0 auto;
+    max-width: 860px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  .standing-container:first-child { margin-top: 0; }
+  .zona-header {
+    background: #b30000bb;
+    color: white;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .zona-title { display: flex; align-items: center; gap: 8px; }
+  .zona-arrow { font-size: 1.2rem; transition: transform .3s; }
+  .zona-body {
+    display: none;
+    padding: 8px 10px 12px;
+    margin: 0;
+  }
+  .mlb-style {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: .9rem;
+    margin: 0;
+  }
+  .mlb-style th, .mlb-style td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+  }
+  .mlb-style th { background: rgba(255,255,255,.2); }
+</style>
 
-  <section id="standing">
-  <h2>Standing UTE</h2>
-  </p>
+<script>
+  function toggleZona(el) {
+    const body = el.nextElementSibling;
+    const arrow = el.querySelector('.zona-arrow');
+    const expanded = body.style.display === 'block';
+    body.style.display = expanded ? 'none' : 'block';
+    arrow.style.transform = expanded ? 'rotate(0)' : 'rotate(180deg)';
+  }
+</script>
 
-  <!-- Repite esta estructura por cada zona -->
- <div id="zona1" class="standing-container">
-  <h3>Zona I</h3>
-  <table class="mlb-style">
-    <thead>
-      <tr>
-        <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr><td>DR0366</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0371</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0402</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0411</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0437</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0454</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0491</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0530</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0532</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
+<section id="standing">
+  <h2 style="text-align:center; color:white;">Standing UTE</h2>
+
+  <!-- Zona I -->
+  <div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona I</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style">
+        <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>DR0366</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0371</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0402</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0411</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0437</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0454</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0491</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0530</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0532</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <!-- Zona II -->
-  <div id="zona2" class="standing-container">
-  <h3>Zona II</h3>
-  <table class="mlb-style">
-    <thead>
-      <tr>
-          <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>DR0128</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0291</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0387</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0409</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0495</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0845</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0863</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0864</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0871</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
+  <div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona II</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style">
+        <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>DR0128</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0291</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0387</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0409</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0495</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0845</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0863</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0864</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0871</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
+
   <!-- Zona III -->
-  <div id="zona3" class="standing-container">
-    <h3>Zona III</h3>
-    <table class="mlb-style">
-      <thead>
-        <tr>
-          <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>DR0247</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0467</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0561</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0562</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0834</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0839</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0843</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona III</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style">
+        <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>DR0247</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0467</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0561</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0562</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0834</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0839</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+         <tr><td>DR0843</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0859</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0860</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
+        <tr><td>DR0860</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>         
+        </tbody>
+      </table>
+    </div>
   </div>
+
   <!-- Zona IV -->
-  <div id="zona4" class="standing-container">
-    <h3>Zona IV</h3>
-    <table class="mlb-style">
-      <thead>
-        <tr>
-           <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>DR0314</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0800</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0842</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0847</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0867</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0890</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0896</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0899</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
+  <div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona IV</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style">
+        <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>DR0314</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0800</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0842</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0847</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0867</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0890</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0896</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0899</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-   <!-- Zona V -->
-  <div id="zona5" class="standing-container">
-    <h3>Zona V</h3>
-    <table class="mlb-style">
-      <thead>
-        <tr>
-          <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-        </tr>
-      </thead>
+
+  <!-- Zona V -->
+  <div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona V</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
       <tbody>
         <tr><td>DR0351</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0352</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0352</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr> 
         <tr><td>DR0356</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0413</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0524</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0861</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0914</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0928</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
+      </tbody></table>
+    </div>
   </div>
-   <!-- Zona VI -->
-  <div id="zona6" class="standing-container">
-    <h3>Zona VI</h3>
+
+  <!-- Zona VI -->
+<div class="standing-container">
+  <div class="zona-header" onclick="toggleZona(this)">
+    <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona VI</span></div>
+    <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+  </div>
+  <div class="zona-body">
     <table class="mlb-style">
-      <thead>
-        <tr>
-           <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-        </tr>
-      </thead>
+      <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
       <tbody>
-        <tr><td>DR0163</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0163</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr> 
         <tr><td>DR0249</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0535</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0836</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
@@ -360,77 +420,85 @@ table tr:nth-child(odd) {
       </tbody>
     </table>
   </div>
-  <!-- Zona VII y VIII -->
-<div id="zona7" class="standing-container">
-  <h3>Zona VII y VIII</h3>
-  <table class="mlb-style">
-    <thead>
-      <tr>
-        <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>DR0002</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0243</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0290</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0302</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0308</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0375</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0458</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0632</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0720</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0820</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0830</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0832</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0859</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0892</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0901</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    </tbody>
-  </table>
 </div>
 
+<!-- Zona VII y VIII -->
+<div class="standing-container" style="margin-top: 3px;">
+  <div class="zona-header" onclick="toggleZona(this)">
+    <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona VII y VIII</span></div>
+    <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+  </div>
+  <div class="zona-body">
+    <table class="mlb-style">
+      <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+      <tbody>
+        <tr><td>DR0002</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0243</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0290</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0302</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0308</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0375</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0458</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0632</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0720</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0820</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0830</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0832</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0859</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0892</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0901</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 <!-- Zona IX -->
-<div id="zona9" class="standing-container">
-  <h3>Zona IX</h3>
-  <table class="mlb-style">
-    <thead>
-      <tr>
-        <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>DR0525</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0540</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0833</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0854</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0873</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0887</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0907</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    </tbody>
-  </table>
+<div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona IX</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+      <tbody>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>DR0525</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0540</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0833</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0854</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0873</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0887</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0907</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <!-- Zona X -->
-<div id="zona10" class="standing-container"></div>
-  <h3>Zona X</h3>
-  <table class="mlb-style">
-    <thead>
-      <tr>
-       <th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>DR0293</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0382</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0383</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0501</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0837</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0857</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0875</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0879</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>DR0923</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    </tbody>
-  </table>
+<div class="standing-container">
+    <div class="zona-header" onclick="toggleZona(this)">
+      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona X</span></div>
+      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    </div>
+    <div class="zona-body">
+      <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
+      <tbody>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>DR0293</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0382</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0383</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0501</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0837</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0857</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0875</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0879</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0923</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <section id="jugadores">
@@ -472,6 +540,144 @@ table tr:nth-child(odd) {
   <tr><td>DR0371</td><td style="word-wrap: break-word;">Jesus Ronal Cruz Nunez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0371</td><td style="word-wrap: break-word;">Franklin Ruben Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
+ <!-- Equipo DR0402 -->
+  <h4>DR0402</h4>
+  <table style="table-layout: fixed; width: 100%;">
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0402</td><td>Keudy Ramirez Tejada</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Daniel Valenzuela Puello</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Gustavo De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Jesús Miguel Henriquez De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Wilkins Yoel Taveras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Jarlin Ramirez Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Starlyn Lantigua</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Deisson Thomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Dylan Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Engels Ariel Gil Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Hector Gabriel Bautista</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Jhoan Steven Jules</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Melfry De Oleo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Nicolas Johniel Ferreras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0402</td><td>Aaron de la Hoz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+
+  <!-- Equipo DR0411 -->
+  <h4>DR0411</h4>
+  <table style="table-layout: fixed; width: 100%;">
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0411</td><td>Carlos Manuel Paulino de la Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Fredelin Dariel Paulino Mendes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Francisco Aguilar Espinal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Wadis Lantigua Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Ann Yadiel Hernandez Puello</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Endry Estil Pierre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Frandiel Quezada Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Hendry Rosario Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Mayquel Telman De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>David Rafael Rosa de Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+   <h4>DR0437</h4>
+  <table style="table-layout: fixed; width: 100%;">
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0437</td><td>Welinton Guerrier Saintfleur</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Janier Reyes Familia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Danny Luis Nunez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Leider Paniagua Gomez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Yaldy Alfonso Marte</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Isaac Custodio Baez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Franklin Daniel Almonte Custodio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Jeremy Frankely Payero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0437</td><td>Ian Emmanuel Soto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+
+  <!-- Equipo DR0530 -->
+  <h4>DR0530</h4>
+  <table style="table-layout: fixed; width: 100%;">
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0530</td><td>John Kelvin Mateo Berroa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Josual Estrella Fleury</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Raynel Manuel Sosa Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Ronald Abad Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Mathew Enmanuel Ulloa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Francisco Javier Gonzalez Linares</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Emanuel Moncion De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Brayner Abel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Dawaris Patricio Guante</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Darlin Almonte Heredia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Jefry F. Jourdain Acosta</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Joharbin Ismael Montero Medina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Juan Marco Caminero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Yoel David Cayo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0530</td><td>Yohan A. Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+
+  <!-- Equipo DR0532 -->
+  <h4>DR0532</h4>
+  <table style="table-layout: fixed; width: 100%;">
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0532</td><td>Sebastian Medrano Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Jose David Martinez Jesus</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Brandoll Williams Mena Marte</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Reymi Jose Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Frank Ignacio Sepulveda De Lo Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Deylin De Los Santos Nuñez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Manuel Paniagua Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Joel Faña Peñalo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Felix Raul Tejada</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Domingo Antonio Marte Rmairez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0532</td><td>Eiberson Henrry Lugo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+</div>
 
     <!-- Puedes repetir esta misma estructura para los otros equipos -->
   </div>
