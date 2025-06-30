@@ -47,7 +47,7 @@ header {
   background-color: rgba(0, 43, 91, 0.85);
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Navegación */
@@ -66,7 +66,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Secciones con fondo semitransparente */
@@ -212,7 +212,7 @@ table tr:nth-child(odd) {
     max-width: 800px;
     text-align: center;
     font-family: 'Garamond', serif;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     line-height: 1.1;
     color: #eeeeee;
   ">
@@ -221,7 +221,7 @@ table tr:nth-child(odd) {
 </p>
 
 <p>
-  Este torneo reúne a más de 1,000 niños de 9 a 11 años, de 82 Centros de Desarrollo Integral, ministerios de iglesias locales, con el objetivo de fortalecer su fe, unidad y compromiso.  
+  Este torneo reúne a más de 1,200 niños de 9 a 11 años, de 82 Centros de Desarrollo Integral, ministerios de iglesias locales, con el objetivo de fortalecer su fe, unidad y compromiso.  
   Usamos el deporte y el discipulado para formar valores cristianos y sembrar esperanza, guiándolos a avanzar como mejores personas hacia un futuro lleno de propósito.
 </p>
 
@@ -238,7 +238,7 @@ table tr:nth-child(odd) {
   }
   .standing-container:first-child { margin-top: 0; }
   .zona-header {
-    background: #b30000bb;
+    background: #70000093;
     color: white;
     padding: 12px 0;
     font-size: 1.3rem;
@@ -283,13 +283,15 @@ table tr:nth-child(odd) {
 </script>
 
 <section id="standing">
-  <h2 style="text-align:center; color:white;">Standing UTE</h2>
+  <h2 style="text-align: center; color: white; font-size: 2.0rem; margin-bottom: 5px;">Standing UTE</h2>
+  <span style="display: block; text-align: center; font-size: 0.75rem; color: #ffe6e6; margin-bottom: 15px;">
+    Haz clic en la Zona para ver los equipos
+  </span>
 
   <!-- Zona I -->
   <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona I</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona I</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style">
@@ -312,21 +314,20 @@ table tr:nth-child(odd) {
   <!-- Zona II -->
   <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona II</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona II</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style">
         <thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
         <tbody>
-          <tr><td>DR0128</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0291</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0387</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0409</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0495</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0845</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0863</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>DR0864</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+          <tr><td>DR0495</td><td>1</td><td>1</td><td>0</td><td>.000</td><td>100.</td></tr>
+          <tr><td>DR0864</td><td>1</td><td>1</td><td>0</td><td>.000</td><td>100.</td></tr>
+          <tr><td>DR0387</td><td>1</td><td>1</td><td>0</td><td>.000</td><td>100.</td></tr>
+          <tr><td>DR0291</td><td>1</td><td>1</td><td>0</td><td>.000</td><td>100.</td></tr> 
+        <tr><td>DR0845</td><td>1</td><td>0</td><td>1</td><td>1.00</td><td>0.00</td></tr>
+          <tr><td>DR0863</td><td>1</td><td>0</td><td>1</td><td>1.00</td><td>0.00</td></tr>
+          <tr><td>DR0409</td><td>1</td><td>0</td><td>1</td><td>1.00</td><td>0.00</td></tr>
+          <tr><td>DR0128</td><td>1</td><td>0</td><td>1</td><td>1.00</td><td>0.00</td></tr>
           <tr><td>DR0871</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         </tbody>
       </table>
@@ -336,8 +337,7 @@ table tr:nth-child(odd) {
   <!-- Zona III -->
   <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona III</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona III</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style">
@@ -360,8 +360,7 @@ table tr:nth-child(odd) {
   <!-- Zona IV -->
   <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona IV</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona IV</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style">
@@ -383,8 +382,7 @@ table tr:nth-child(odd) {
   <!-- Zona V -->
   <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona V</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona V</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
@@ -404,8 +402,7 @@ table tr:nth-child(odd) {
   <!-- Zona VI -->
 <div class="standing-container">
   <div class="zona-header" onclick="toggleZona(this)">
-    <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona VI</span></div>
-    <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    <div class="zona-title"></span><span>Zona VI</span><span class="zona-arrow">▼</div>
   </div>
   <div class="zona-body">
     <table class="mlb-style">
@@ -425,8 +422,7 @@ table tr:nth-child(odd) {
 <!-- Zona VII y VIII -->
 <div class="standing-container" style="margin-top: 3px;">
   <div class="zona-header" onclick="toggleZona(this)">
-    <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona VII y VIII</span></div>
-    <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+    <div class="zona-title"></span><span>Zona VII y VIII</span><span class="zona-arrow">▼</div>
   </div>
   <div class="zona-body">
     <table class="mlb-style">
@@ -439,7 +435,7 @@ table tr:nth-child(odd) {
         <tr><td>DR0308</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0375</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0458</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>DR0632</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>DR0634</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0720</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0820</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
         <tr><td>DR0830</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
@@ -454,8 +450,7 @@ table tr:nth-child(odd) {
 <!-- Zona IX -->
 <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona IX</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona IX</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
@@ -478,8 +473,7 @@ table tr:nth-child(odd) {
 <!-- Zona X -->
 <div class="standing-container">
     <div class="zona-header" onclick="toggleZona(this)">
-      <div class="zona-title"><span class="zona-arrow">▼</span><span>Zona X</span></div>
-      <span style="font-size:0.85rem; color:#ffe6e6;">Haz clic para ver equipos</span>
+      <div class="zona-title"></span><span>Zona X</span><span class="zona-arrow">▼</div>
     </div>
     <div class="zona-body">
       <table class="mlb-style"><thead><tr><th>Equipo</th><th>JJ</th><th>JG</th><th>JP</th><th>DIF.</th><th>%</th></tr></thead>
@@ -501,29 +495,163 @@ table tr:nth-child(odd) {
   </div>
 </div>
 
-<section id="jugadores">
-  <h2>Promedio de los Jugadores
-  <!-- Aquí va tu contenido de jugadores -->
-</section>
+<style>
+  .jugadores-container {
+    margin: 0 auto;
+    margin-bottom: 6px; /* Pequeña brecha uniforme entre zonas */
+    max-width: 860px;
+    background-color: rgba(0, 0, 50, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .jugadores-container:last-of-type {
+    margin-bottom: 0; /* Evita espacio extra después de la última zona */
+  }
+
+  .zona-header-jugador {
+    background-color: #004080cc;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+  }
+
+  .zona-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .zona-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    order: 2; /* Mueve la flechita a la derecha del texto */
+  }
+
+  .zona-body-jugador {
+    display: none;
+    padding: 10px 15px;
+    color: white;
+    margin-top: 0;
+  }
+
+  .zona-body-jugador h4 { 
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 10px 0 6px;
+  font-weight: normal; /* O bold si lo prefieres */
+}
+
+  .mlb-style {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+
+  .mlb-style th,
+  .mlb-style td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .mlb-style th {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+</style>
+
+<script>
+  function toggleZonaJugador(header) {
+    const zonaBody = header.nextElementSibling;
+    const arrow = header.querySelector(".zona-arrow");
+
+    const isVisible = zonaBody.style.display === "block";
+    zonaBody.style.display = isVisible ? "none" : "block";
+    arrow.textContent = isVisible ? "▼" : "▲";
+  }
+</script>
+
+</style>
+
+<section id="standing">
+  <h2 style="text-align: center; color: white; font-size: 2.0rem; margin-bottom: 5px;">Promedio de los Jugadores</h2>
+  <span style="display: block; text-align: center; font-size: 0.75rem; color: #ffe6e6; margin-bottom: 15px;">
+    Haz clic en la Zona para ver los equipos
+  </span>
 
   <!-- ZONA I -->
-  <div class="zona">
-    <h3>ZONA I</h3>
-    
-<!-- Equipo DR0366 -->
+  <div class="jugadores-container">
+    <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+      <div class="zona-title">
+        <span class="zona-text">Zona I</span>
+        <span class="zona-arrow">▼</span>
+      </div>
+    </div>
+
+    <div class="zona-body-jugador">
+      <!-- Equipo DR0366 -->
 <h4>DR0366</h4>
-<table style="table-layout: fixed; width: 100%;">
-  <tr>
-    <th style="width: 15%;">Centro</th>
-    <th style="width: 25%;">Jugador</th>
-    <th style="width: 6%; font-size: 0.8rem;">J</th>
-    <th style="width: 6%; font-size: 0.8rem;">H</th>
-    <th style="width: 6%; font-size: 0.8rem;">H4</th>
-    <th style="width: 6%; font-size: 0.8rem;">BB</th>
-    <th style="width: 6%; font-size: 0.8rem;">SO</th>
-    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  </tr>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Dariant Guzman Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Greyban Novas Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Erik Alfredo Cuevas Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Yadiel Reyes Pena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Adrian Abel Romero Pina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Elian Junior Moran</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Alexander José Herrera Suero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Heury Rafael Javier Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Greyber Novas Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Felipe Javier Cuevas Meran</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Mateo Abraham Ramirez Marte</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Angel Luis Peguero Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Fredley Dervil</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0366</td><td style="word-wrap: break-word;">Sebastian Ariel Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+      <!-- Equipo DR0371 -->
+      <h4>DR0371</h4>
+     <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Centro</th>
+            <th style="width: 25%;">Jugador</th>
+            <th style="width: 6%; font-size: 0.8rem;">J</th>
+            <th style="width: 6%; font-size: 0.8rem;">H</th>
+            <th style="width: 6%; font-size: 0.8rem;">H4</th>
+            <th style="width: 6%; font-size: 0.8rem;">BB</th>
+            <th style="width: 6%; font-size: 0.8rem;">SO</th>
+            <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+            <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+          </tr>
+        </thead>
+        <tbody>
   <tr><td>DR0371</td><td style="word-wrap: break-word;">Diori Enmanuel Brito</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0371</td><td style="word-wrap: break-word;">Frankely Abrahan Frias Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0371</td><td style="word-wrap: break-word;">Ricardo David Padron Javier</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
@@ -542,7 +670,8 @@ table tr:nth-child(odd) {
 </table>
  <!-- Equipo DR0402 -->
   <h4>DR0402</h4>
-  <table style="table-layout: fixed; width: 100%;">
+<table class="mlb-style" style="margin-bottom: 0;">
+  </thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -573,7 +702,8 @@ table tr:nth-child(odd) {
 
   <!-- Equipo DR0411 -->
   <h4>DR0411</h4>
-  <table style="table-layout: fixed; width: 100%;">
+  <table class="mlb-style" style="margin-bottom: 0;">
+    </thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -595,9 +725,16 @@ table tr:nth-child(odd) {
     <tr><td>DR0411</td><td>Hendry Rosario Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0411</td><td>Mayquel Telman De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0411</td><td>David Rafael Rosa de Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Adian Enmanuel Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Angel Gabriel Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Dilan Fernando Celestino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Jacob Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0411</td><td>Tyler Ramos Villanueva</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+  <!-- Equipo DR0437 -->
    <h4>DR0437</h4>
-  <table style="table-layout: fixed; width: 100%;">
+  <table class="mlb-style" style="margin-bottom: 0;">
+    </thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -619,10 +756,42 @@ table tr:nth-child(odd) {
     <tr><td>DR0437</td><td>Jeremy Frankely Payero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0437</td><td>Ian Emmanuel Soto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
+<!-- Equipo DR0491 -->
+<h4>DR0491</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Jean Carlos Garallues Concepcion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Ronald Francois</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Robel Martinez Marte</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Luis Ander Perez Florian</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Liam Ghael Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Juan Mateo Pierre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Evenson Dumelsy</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Adriel Arismendy Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Keyler Antonio Noel Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Sterlin Manuel Cuevas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Oliver Elian Cruz Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Johan Gabriel Benzant</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0491</td><td style="word-wrap: break-word;">Richard Smith Vargas Dolores</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
   <!-- Equipo DR0530 -->
   <h4>DR0530</h4>
-  <table style="table-layout: fixed; width: 100%;">
+    <table class="mlb-style" style="margin-bottom: 0;">
+    </thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -653,7 +822,8 @@ table tr:nth-child(odd) {
 
   <!-- Equipo DR0532 -->
   <h4>DR0532</h4>
-  <table style="table-layout: fixed; width: 100%;">
+    <table class="mlb-style" style="margin-bottom: 0;">
+    </thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -672,23 +842,41 @@ table tr:nth-child(odd) {
     <tr><td>DR0532</td><td>Frank Ignacio Sepulveda De Lo Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0532</td><td>Deylin De Los Santos Nuñez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0532</td><td>Manuel Paniagua Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0532</td><td>Joel Faña Peñalo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0532</td><td>Felix Raul Tejada</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0532</td><td>Domingo Antonio Marte Rmairez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0532</td><td>Eiberson Henrry Lugo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
+  </tbody>
+      </table>
+    </div>
 </div>
+<div style="margin-top: 8px;"></div> <!-- <-- Esto elimina el espacio -->
 
-    <!-- Puedes repetir esta misma estructura para los otros equipos -->
-  </div>
+<script>
+  function toggleZonaJugador(header) {
+    const zonaBody = header.nextElementSibling;
+    const arrow = header.querySelector(".zona-arrow");
+
+    const isVisible = zonaBody.style.display === "block";
+    zonaBody.style.display = isVisible ? "none" : "block";
+    arrow.textContent = isVisible ? "▼" : "▲";
+  }
+</script>
 
  <!-- ZONA II -->
-<div class="zona">
-  <h3>ZONA II</h3>
+  <div class="jugadores-container">
+    <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+      <div class="zona-title">
+        <span class="zona-text">Zona II</span>
+        <span class="zona-arrow">▼</span>
+      </div>
+    </div>
 
-  <!-- Equipo DR0871 --> 
-  <h4>DR0871</h4> 
-  <table style="table-layout: fixed; width: 100%;">
+    <div class="zona-body-jugador">
+      
+      <!-- Equipo DR0128 -->
+<h4>DR0128</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -700,26 +888,25 @@ table tr:nth-child(odd) {
       <th style="width: 6%; font-size: 0.8rem;">RBI</th>
       <th style="width: 10%; font-size: 0.8rem;">AVG</th>
     </tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Wildaniel Jesus Placencio Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Samuel Elias Carderon Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Rainel Andres Espinosa Mateo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Anibal Joseluis Arias Sano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Yadiel Martinez Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Luis Manuel Alvarez Puello</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Samir Yonael Morban Aquino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Wanel Elisandro Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Warlin Ignacio Muñoz Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Xaviel Euclides Mendez Suarez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Lucas Gonzalez Alvarez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Dillan Lara Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Asdrid Gadiel Perez Arias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Luis Miguel Arias Carmona</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0871</td><td style="word-wrap: break-word;">Brendon Ysmael Rosado Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
+  </thead>
+  <tbody>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Josue Enmanuel Pineda</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Gabriel Alberto Mejia Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Albert Daniel Lara Esther</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Eyden Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Jahir Moises Lara Villar</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Yoervis Esmil Medina Cespedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Gabriel Antonio Soto Sena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Jeansel Franco Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Jeury minyety</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0128</td><td style="word-wrap: break-word;">Raylin Sisa Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
 
-  <!-- Equipo DR0387 --> 
+        <!-- Equipo DR0387 --> 
   <h4>DR0387</h4> 
-  <table style="table-layout: fixed; width: 100%; margin-top: 1rem;">
+ <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -746,15 +933,12 @@ table tr:nth-child(odd) {
     <tr><td>DR0387</td><td style="word-wrap: break-word;">Gabriel Ernesto Reynoso Pacheco</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0387</td><td style="word-wrap: break-word;">Julio Cesar Villar Nieves</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0387</td><td style="word-wrap: break-word;">Yogualdi Manuel del Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
-</div>
-<!-- ZONA 3 -->
-<div class="zona">
-  <h3>ZONA III</h3>
-
-  <!-- Equipo DR0843 -->
-  <h4>DR0843</h4>
-  <table style="table-layout: fixed; width: 100%;">
+ </tbody>
+      </table>
+    <!-- Equipo DR0409 -->
+<h4>DR0409</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -766,25 +950,223 @@ table tr:nth-child(odd) {
       <th style="width: 6%; font-size: 0.8rem;">RBI</th>
       <th style="width: 10%; font-size: 0.8rem;">AVG</th>
     </tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yodin Alexander Ramirez Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Josue Ramirez Ciprian</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Dilan Rafelin Ramirez De La Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Steylin Ciprian</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yoneivi Rafael Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yefersso Matos Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yariel Esmil Ramirez Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Angel Stanling Hernandez Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Janiel Amador Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Daurelin Perez Pujols</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yolvis Michael Ramirez Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Wilkeidin Estiven Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Jerkyn Romil Ramirez Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yaniel Gabriel Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Erick Araujo Soto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Eliezer Lara Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Yahir Ernesto De Los Santos Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Maxuel Jael Feliz Pujol</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Oriel Corniel Aybar</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Angel Daniel Aybar Montillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Darlyn Manuel Sanchez Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Jostin Victoriano Guerrero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Alan Miguel Montero Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Alejandro Morel Jaquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Ezequiel Jimenez Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Darlin Alexander Gomez Alvarado</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Elian Javier Reinoso Bautista</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Isidro Jonas Mejia Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0409</td><td style="word-wrap: break-word;">Jeremias Ramon Martin</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+<!-- Equipo DR0495 -->
+<h4>DR0495</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Pablo Ismael Rodriguez Romero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Angel Enrique Mejia Lucas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Wander Cesarin Mateo Doñe</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Enmanuel Pilar Lorenzo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Kevin Emmanuel Mendez Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Odailin Abel Arias Encarnación</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Ostin Sadiel Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Euri Jhonniel Florian Mercedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Ivan Daniel Alvarez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Ranfel Saul NG Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Abraham Junior Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Enmanuel Jose Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Johan Samuel Figueroa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Willian Andres Franco Vargas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0495</td><td style="word-wrap: break-word;">Yeraldi Enrrique Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+
+<!-- Equipo DR0845 -->
+<h4>DR0845</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Luis Manuel Pinales</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Jadiel Sierra Brito</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Raidel Emilio Brito Placensio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Yoandy Perez Sierra</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Ricaldo Charles Cadet</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Isacc Hernandez Adams</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Andy Isai Lopez Aybar</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Juan Jose Paredes Sierra</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Carlos Deniel Franco Reynoso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Gabriel Pascual Sierra</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Emil Antonio Advincola Arias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Deivi Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Jeremias Caro Pascual</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Joshuel Tiburcio Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0845</td><td style="word-wrap: break-word;">Leonardo Jose Cuevas Lopez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+<!-- Equipo DR0863 -->
+<h4>DR0863</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Dairon Bautista Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Eminton Ferran Andujar</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Joandis Guzmán Ramírez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Alan Esnehider Bruján Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Juan Araujo del Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Edwardo Brioso Sierra</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Joerlin Luciano Tejeda</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Yaleuri Diaz Febrillet</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Esmerlin Mota Ramírez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Victor Sadiel Japa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Franyer Brioso Dipre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Rocardo Javier Brujan Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Samil Ramirez Mercedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Yansel Cruz Aquino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0863</td><td style="word-wrap: break-word;">Amil Alonso Mateo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+      <!-- Equipo DR0864 -->
+<h4>DR0864</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Adrian Enmanuel Duval Bens</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Juan Manuel Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Lian Esteban Rodriguez Lugo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Alan Jadiel Romero Valdez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Carlos Manuel Alvarez German</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Adalberto Lachapell Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Luis Daniel Sierra Pieter</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Yair Manuel Lara Bens</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Aleudy Enmanuel Peña Candelario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Daneuri Rafael Nova</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Danny Daniel Ysabel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Derlin Manuel Soto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0864</td><td style="word-wrap: break-word;">Jean Carlos Mateo Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+      <!-- Equipo DR0871 -->
+      <h4>DR0871</h4>
+      <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Centro</th>
+            <th style="width: 25%;">Jugador</th>
+            <th style="width: 6%; font-size: 0.8rem;">J</th>
+            <th style="width: 6%; font-size: 0.8rem;">H</th>
+            <th style="width: 6%; font-size: 0.8rem;">H4</th>
+            <th style="width: 6%; font-size: 0.8rem;">BB</th>
+            <th style="width: 6%; font-size: 0.8rem;">SO</th>
+            <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+            <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Wildaniel Jesus Placencio Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Samuel Elias Carderon Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Rainel Andres Espinosa Mateo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Anibal Joseluis Arias Sano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Yadiel Martinez Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Luis Manuel Alvarez Puello</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Samir Yonael Morban Aquino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Wanel Elisandro Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Warlin Ignacio Muñoz Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Xaviel Euclides Mendez Suarez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Lucas Gonzalez Alvarez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Dillan Lara Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Asdrid Gadiel Perez Arias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Luis Miguel Arias Carmona</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0871</td><td style="word-wrap: break-word;">Brandon Ysmael Rosado Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
 
-  <!-- Equipo DR0247 -->
+
+       </div>
+</div>
+<div style="margin-top: 8px;"></div> <!-- <-- Esto elimina el espacio -->
+
+<script>
+  function toggleZonaJugador(header) {
+    const zonaBody = header.nextElementSibling;
+    const arrow = header.querySelector(".zona-arrow");
+
+    const isVisible = zonaBody.style.display === "block";
+    zonaBody.style.display = isVisible ? "none" : "block";
+    arrow.textContent = isVisible ? "▼" : "▲";
+  }
+</script>
+<!-- ZONA 3 -->
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA III</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+
+  <div class="zona-body-jugador">
+      <!-- Equipo DR0247 -->
   <h4>DR0247</h4>
-  <table style="table-layout: fixed; width: 100%; margin-top: 1rem;">
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
     <tr>
       <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
@@ -811,14 +1193,185 @@ table tr:nth-child(odd) {
     <tr><td>DR0247</td><td style="word-wrap: break-word;">Wilfraydy Joselin Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0247</td><td style="word-wrap: break-word;">Freddy Frank Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+  <!-- Equipo DR0467 -->
+  <h4>DR0467</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0467</td><td>Fredelin Galvan</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Isaac Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Rafael Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Jose Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Felix Samuel Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Yadiel Luciano Lebron</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Fedry Manuel Ramirez Galvan</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Victor Manuel Rivera Arias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Saul Veloz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Miguel Diaz Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Alejandro Estiven Ramirez Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>rivk Manuel Lebron Luciano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Gerlyn David Hierro Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Iverson Alexis Cabrera de la Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0467</td><td>Edwin Castillo Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+  <!-- Equipo DR0561 -->
+<h4>DR0561</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0561</td><td>Rayber Melin Tiburcio Bido</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Saviel Suero Ferreras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Carlos Brandy Veloz Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Wilson David Aybar</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Deiker Joel De Leon Ferreras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Alendrys Galvan de los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Samuel Sanon Fransisk</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Luis Manuel de Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Leudy Manuel de los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Aaron Moises Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Johan Manuek Vargas Delgado</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Bequer Ramirez Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Kelvin Javier Suero Ferreras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Ramses Miguel Matos Suzana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0561</td><td>Esmerlin Suero Surbi</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+    <!-- Equipo DR0834 -->
+<h4>DR0834</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Estalwin Ramirez Custodio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Alan Pineda Vargas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Darlin Manuel Peña Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Yaniel Sanchez Santiago</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Erik Matos Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Oscar Elias Aristi Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Jhustin Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Jose Isaac Caraballo Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Angel Yeriel Melo Veloz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Charlie Michael de Oleo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Luis Rubiel Arlet</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0834</td><td style="word-wrap: break-word;">Wayner Valenzuela Moron</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+    <!-- Equipo DR0843 -->
+    <h4>DR0843</h4>
+    <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+      <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">TB</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yodin Alexander Ramirez Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Josue Ramirez Ciprian</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Dilan Rafelin Ramirez De La Rosa</td><td>3</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Steylin Ciprian</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yoneivi Rafael Matos</td><td>2</td><td>-</td><td>-</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yefersso Matos Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yariel Esmil Ramirez Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Angel Stanling Hernandez Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Janiel Amador Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Daurelin Perez Pujols</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yolvis Michael Ramirez Martinez</td><td>3</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Wilkeidin Estiven Ramirez</td><td>3</td><td>-</td><td>-</td><td>2</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Jerkyn Romil Ramirez Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0843</td><td style="word-wrap: break-word;">Yaniel Gabriel Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+  <!-- Equipo DR0860 -->
+<h4>DR0860</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">TB</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0860</td><td>Dawel Alexander Calderon Matos</td><td>3</td><td>-</td><td>-</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Abdias Perez Perez</td><td>2</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Jaifer Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Jhael Perez Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Maibel Perez</td><td>3</td><td>-</td><td>-</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Oscar David Rosso Pujors</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Malber Rosso</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Esteilin Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Frandis Fidelman</td><td>2</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Keyfel Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Adriel Beltre Figueroa</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Stailing Diaz Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Yaisuel David Jimenez</td><td>2</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0860</td><td>Yojan Rosso</td><td>2</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
+  </div>
 </div>
-<!-- ZONA IV -->
-<div class="zona">
-  <h3>ZONA IV</h3>
 
+<!-- ZONA IV -->
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA IV</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
   <!-- Equipo DR0314 -->
   <h4>DR0314</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
       <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -842,12 +1395,13 @@ table tr:nth-child(odd) {
     <tr><td>DR0314</td><td style="word-wrap: break-word;">Yendri Louis Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0314</td><td style="word-wrap: break-word;">Rois Andriel Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0314</td><td style="word-wrap: break-word;">Jaden Peniel Volquez Poline</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0314</td><td style="word-wrap: break-word;">Heidel Paul Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0314</td><td style="word-wrap: break-word;">Gefte Feliz Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
   <!-- Equipo DR0800 -->
   <h4>DR0800</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
       <th style="width: 25%;">Jugador</th>
       <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -873,8 +1427,11 @@ table tr:nth-child(odd) {
     <tr><td>DR0800</td><td style="word-wrap: break-word;">Axel Leonardo Beti</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0800</td><td style="word-wrap: break-word;">Neifi Montero Nicolas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+    <!-- Equipo DR0842 -->
 <h4>DR0842</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -897,35 +1454,11 @@ table tr:nth-child(odd) {
   <tr><td>DR0842</td><td style="word-wrap: break-word;">Fraineli Manuel Medina Matos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
-<!-- Equipo DR0867 -->
-<h4>DR0867</h4>
-<table>
-  <th style="width: 15%;">Centro</th>
-  <th style="width: 25%;">Jugador</th>
-  <th style="width: 6%; font-size: 0.8rem;">J</th>
-  <th style="width: 6%; font-size: 0.8rem;">H</th>
-  <th style="width: 6%; font-size: 0.8rem;">H4</th>
-  <th style="width: 6%; font-size: 0.8rem;">BB</th>
-  <th style="width: 6%; font-size: 0.8rem;">SO</th>
-  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Jesus Elias Reyes Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Adrison Peña Cuevas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Luis Silverio Mendez Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Yordin Perdomo Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Brandel Mateo Algarrobo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Luis Jesus Ramirez Medina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Edry Junior Baez Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Sucre Emmanuel Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Oscar Daniel Cuevas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Randy Batis De La Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Deilin Samuel Matos Desena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Ander Andres Benel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0867</td><td style="word-wrap: break-word;">Braylin Josue Cuevas Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
 <!-- Equipo DR0847 -->
 <h4>DR0847</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -951,10 +1484,39 @@ table tr:nth-child(odd) {
   <tr><td>DR0847</td><td style="word-wrap: break-word;">Keiron Andres Perez Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0847</td><td style="word-wrap: break-word;">Jhostyn Dariel Leyba</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
-
+<!-- Equipo DR0867 -->
+<h4>DR0867</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+  <th style="width: 15%;">Centro</th>
+  <th style="width: 25%;">Jugador</th>
+  <th style="width: 6%; font-size: 0.8rem;">J</th>
+  <th style="width: 6%; font-size: 0.8rem;">H</th>
+  <th style="width: 6%; font-size: 0.8rem;">H4</th>
+  <th style="width: 6%; font-size: 0.8rem;">BB</th>
+  <th style="width: 6%; font-size: 0.8rem;">SO</th>
+  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Jesus Elias Reyes Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Adrison Peña Cuevas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Luis Silverio Mendez Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Yordin Perdomo Beltre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Brandel Mateo Algarrobo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Luis Jesus Ramirez Medina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Edry Junior Baez Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Sucre Emmanuel Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Oscar Daniel Cuevas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Randy Batis De La Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Deilin Samuel Matos Desena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Ander Andres Benel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0867</td><td style="word-wrap: break-word;">Braylin Josue Cuevas Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
 <!-- Equipo DR0890 -->
 <h4>DR0890</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -982,7 +1544,9 @@ table tr:nth-child(odd) {
 </table>
 <!-- Equipo DR0896 -->
 <h4>DR0896</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1003,10 +1567,11 @@ table tr:nth-child(odd) {
   <tr><td>DR0896</td><td style="word-wrap: break-word;">Yeury Manolo Suarez Yil</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0896</td><td style="word-wrap: break-word;">Yeremi Antonio Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
-
 <!-- Equipo DR0899 -->
 <h4>DR0899</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1032,38 +1597,22 @@ table tr:nth-child(odd) {
   <tr><td>DR0899</td><td style="word-wrap: break-word;">Francis Cuevas Feliz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0899</td><td style="word-wrap: break-word;">Freydison Jean</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
+  </div>
 </div>
 <!-- ZONA V -->
-<div class="zona">
-  <h3>ZONA V</h3>
-
-  <!-- Equipo DR0524 -->
-  <h4>DR0524</h4>
-  <table>
-    <th style="width: 15%;">Centro</th>
-    <th style="width: 25%;">Jugador</th>
-    <th style="width: 6%; font-size: 0.8rem;">J</th>
-    <th style="width: 6%; font-size: 0.8rem;">H</th>
-    <th style="width: 6%; font-size: 0.8rem;">H4</th>
-    <th style="width: 6%; font-size: 0.8rem;">BB</th>
-    <th style="width: 6%; font-size: 0.8rem;">SO</th>
-    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Enyer Gabriel Castillo Cespedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Jhoniel Javier</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Jean Carlos Benzan Angomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Joshua Montero Bautista</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Maikol Antonio Bocio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Dairon Manuel Piña Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Johan Alexander Valdez Taveras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Emanuel Mateo Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Brandol Rosario Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0524</td><td style="word-wrap: break-word;">Carlos Yunior De los Santos Furcal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
-
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA V</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
   <!-- Equipo DR0351 -->
   <h4>DR0351</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1089,10 +1638,11 @@ table tr:nth-child(odd) {
     <tr><td>DR0351</td><td style="word-wrap: break-word;">Ricki Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0351</td><td style="word-wrap: break-word;">Max Valenzuela</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
   <!-- Equipo DR0352 -->
   <h4>DR0352</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1111,11 +1661,14 @@ table tr:nth-child(odd) {
     <tr><td>DR0352</td><td style="word-wrap: break-word;">Ans David Adames</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0352</td><td style="word-wrap: break-word;">Stiven De Oleo Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0352</td><td style="word-wrap: break-word;">Edrian Montero Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0352</td><td style="word-wrap: break-word;">Cristopher Encarnacion Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0352</td><td style="word-wrap: break-word;">Moisés Bergal Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
   <!-- Equipo DR0356 -->
   <h4>DR0356</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1136,11 +1689,13 @@ table tr:nth-child(odd) {
     <tr><td>DR0356</td><td style="word-wrap: break-word;">Lewin Sencion Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0356</td><td style="word-wrap: break-word;">Dharel Jose Perez Pineda</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0356</td><td style="word-wrap: break-word;">Erisandro De Leon Ibert</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0356</td><td style="word-wrap: break-word;">Yojansel Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
   <!-- Equipo DR0413 -->
   <h4>DR0413</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1166,10 +1721,74 @@ table tr:nth-child(odd) {
     <tr><td>DR0413</td><td style="word-wrap: break-word;">Kevin Sebastian Rogriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0413</td><td style="word-wrap: break-word;">Cesar Junios Sepulveda</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
-
+  <!-- Equipo DR0524 -->
+  <h4>DR0524</h4>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+    <th style="width: 15%;">Centro</th>
+    <th style="width: 25%;">Jugador</th>
+    <th style="width: 6%; font-size: 0.8rem;">J</th>
+    <th style="width: 6%; font-size: 0.8rem;">H</th>
+    <th style="width: 6%; font-size: 0.8rem;">H4</th>
+    <th style="width: 6%; font-size: 0.8rem;">BB</th>
+    <th style="width: 6%; font-size: 0.8rem;">SO</th>
+    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Enyer Gabriel Castillo Cespedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Jhoniel Javier</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Jean Carlos Benzan Angomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Joshua Montero Bautista</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Maikol Antonio Bocio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Dairon Manuel Piña Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Johan Alexander Valdez Taveras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Emanuel Mateo Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Brandol Rosario Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Carlos Yunior De los Santos Furcal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Hanley Jesus Alcantara Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Jassel Elian Montero Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Erick Isael De Los Santos Peralta</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0524</td><td style="word-wrap: break-word;">Wilamo Alexander Zabala Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
+  <!-- Equipo DR0914 -->
+<h4>DR0914</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Stiven Garcia Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Alfredo Javier Tomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Yeider Ramirez De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Amauris Meran Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Sebastian Ramírez Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Edwin Jesus Mercedez Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Gregoris Javier Luciano Mateo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Kevin Daniel De La Rosa Montilla</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Jeudy Contrera Herrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Yoscaymer Rafelix Garcia Ferrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Yeifer Daniel Villegas Herrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Owhel Antonio Herrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Reilin Pina Familia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Dawel Herrera Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0914</td><td style="word-wrap: break-word;">Angel Eskandar Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
   <!-- Equipo DR0928 -->
   <h4>DR0928</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1195,14 +1814,50 @@ table tr:nth-child(odd) {
     <tr><td>DR0928</td><td style="word-wrap: break-word;">Ivaniel Geronimo Rosso</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0928</td><td style="word-wrap: break-word;">Sebastian Patricio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+  </div>
 </div>
 <!-- ZONA VI -->
-<div class="zona">
-  <h3>ZONA VI</h3>
-
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA VI</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
+ <!-- Equipo DR0163 -->
+<h4>DR0163</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Adrian Jabier Barrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Mario Nathanael Jean Baptiste</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Jostin Onvil</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Anderson Brazoban</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Mario Jose Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Misael Soto Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Yoeni Jose Mariano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Yonkendry Prensa Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0163</td><td style="word-wrap: break-word;">Anderson Yuniel Brazoban</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </tbody>
+</table>
   <!-- Equipo DR0249 -->
   <h4>DR0249</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1228,10 +1883,66 @@ table tr:nth-child(odd) {
     <tr><td>DR0249</td><td style="word-wrap: break-word;">Victor Manuel Manon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0249</td><td style="word-wrap: break-word;">Rayner Castillo Noel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+<!-- Equipo DR0533 -->
+  <h4>DR0533</h4>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+    <th style="width: 15%;">Centro</th>
+    <th style="width: 25%;">Jugador</th>
+    <th style="width: 6%; font-size: 0.8rem;">J</th>
+    <th style="width: 6%; font-size: 0.8rem;">H</th>
+    <th style="width: 6%; font-size: 0.8rem;">H4</th>
+    <th style="width: 6%; font-size: 0.8rem;">BB</th>
+    <th style="width: 6%; font-size: 0.8rem;">SO</th>
+    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Andy Junior Ullola Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Edward Dariel Guerrero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Jose Miguel Rodriguez Ramirez Jose</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Reyvin Ariel Mata Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Wilmer Yunior Rodriguez Devora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Eduarlin Antonio Garcia Camacho</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Ronald Severino Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Wailin Rivas Vallejo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Elias Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0533</td><td style="word-wrap: break-word;">Yudarvin Dona de la Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
 
+  <!-- Equipo DR0836 -->
+  <h4>DR0836</h4>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+    <th style="width: 15%;">Centro</th>
+    <th style="width: 25%;">Jugador</th>
+    <th style="width: 6%; font-size: 0.8rem;">J</th>
+    <th style="width: 6%; font-size: 0.8rem;">H</th>
+    <th style="width: 6%; font-size: 0.8rem;">H4</th>
+    <th style="width: 6%; font-size: 0.8rem;">BB</th>
+    <th style="width: 6%; font-size: 0.8rem;">SO</th>
+    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Andreilin De la Rosa Marcilino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Angel Ricardo Lugo Bergal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Gilbert Feliz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Juan Manuel Riveras Bastita</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Leunny Roniel Adon Bonifacio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Nathanael Santana Syffrard</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sanniel Colon De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sneider Vergal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Enmanuel Del Rosario Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Roynel Abad Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sneider Abdali Mariano Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Daniel Antonio de Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Juan Alejandro Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0836</td><td style="word-wrap: break-word;">Carlos Roniel Abad</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
   <!-- Equipo DR0872 -->
   <h4>DR0872</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1258,58 +1969,11 @@ table tr:nth-child(odd) {
     <tr><td>DR0872</td><td style="word-wrap: break-word;">Roniel Jesus Brand</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
 
-  <!-- Equipo DR0533 -->
-  <h4>DR0533</h4>
-  <table>
-    <th style="width: 15%;">Centro</th>
-    <th style="width: 25%;">Jugador</th>
-    <th style="width: 6%; font-size: 0.8rem;">J</th>
-    <th style="width: 6%; font-size: 0.8rem;">H</th>
-    <th style="width: 6%; font-size: 0.8rem;">H4</th>
-    <th style="width: 6%; font-size: 0.8rem;">BB</th>
-    <th style="width: 6%; font-size: 0.8rem;">SO</th>
-    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Andy Junior Ullola Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Edward Dariel Guerrero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Jose Miguel Rodriguez Ramirez Jose</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Reyvin Ariel Mata Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Wilmer Yunior Rodriguez Devora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Eduarlin Antonio Garcia Camacho</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0533</td><td style="word-wrap: break-word;">Ronald Severino Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
-
-  <!-- Equipo DR0836 -->
-  <h4>DR0836</h4>
-  <table>
-    <th style="width: 15%;">Centro</th>
-    <th style="width: 25%;">Jugador</th>
-    <th style="width: 6%; font-size: 0.8rem;">J</th>
-    <th style="width: 6%; font-size: 0.8rem;">H</th>
-    <th style="width: 6%; font-size: 0.8rem;">H4</th>
-    <th style="width: 6%; font-size: 0.8rem;">BB</th>
-    <th style="width: 6%; font-size: 0.8rem;">SO</th>
-    <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-    <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Andreilin De la Rosa Marcilino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Angel Ricardo Lugo Bergal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Gilbert Feliz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Juan Manuel Riveras Bastita</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Leunny Roniel Adon Bonifacio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Nathanael Santana Syffrard</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sanniel Colon De Los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sneider Vergal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Enmanuel Del Rosario Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Roynel Abad Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Sneider Abdali Mariano Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Daniel Antonio de Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Juan Alejandro Castillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>DR0836</td><td style="word-wrap: break-word;">Carlos Roniel Abad</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  </table>
-
   <!-- Equipo DR0897 -->
   <h4>DR0897</h4>
-  <table>
+  <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
     <th style="width: 15%;">Centro</th>
     <th style="width: 25%;">Jugador</th>
     <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1334,41 +1998,351 @@ table tr:nth-child(odd) {
     <tr><td>DR0897</td><td style="word-wrap: break-word;">Frayniel Figueroa de Jesus</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td>DR0897</td><td style="word-wrap: break-word;">Lemuel Guerrero Srptimo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   </table>
+  </div>
+</div>
+<!-- ZONA VII y VIII -->
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA VII y VIII</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
+  <!-- Equipo DR0002 -->
+<h4>DR0002</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Francis Lora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Gregori Mendoza Urraca</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">David Jose Yan</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Manuel Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Angel Benites Moir</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Jorlin Lopez Sanfler</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Johan Martinez Manzanillo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Leudy Alexander Richardson Cedeño</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">German Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Leandro Yariel Guillen Sinojen</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Esneider Trinidad</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Carlos Manuel Pie</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Juan Carlos Fon Frias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Samuel Baptiste</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0002</td><td style="word-wrap: break-word;">Yerison Rosario Medina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+ </table>
+ <!-- Equipo DR0290 -->
+<h4>DR0290</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0290</td><td>Chandler Justin Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Leonardo Santana Innoant</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Jarlen Rosario Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Darlin Frandy Valdez Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Samuel Andres Reyes Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Angel Enriquez Sanchez Fleming</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Gabriel Ignacio Valdez Felipe</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Jeremy Benjamin Cruz Clemente</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Carlos Haziel Mejia Echavarria</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Edward Yadiel Silvestre</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Elian Abrahan Amador</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Rosnel Salvador Perez Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Starlyn Miguel de la Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Wilmy Julian Carter Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0290</td><td>Yensi Elian Cabrera Javier</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0302 -->
+<h4>DR0302</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0302</td><td>Darlin Miguel Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Dariel Monte de Oca</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Raudy Williams Arache</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Yeron Sebastian Oliver</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Yahel Esteban Valdez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Pedro Junior Willians</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Obed Rafael Solano Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Alan Yasiel Mañon Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Angel Miguel Nuñez Jean</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Daniel Familia Lora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Jervis Eliezer Cedeño Melo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Joel Elias Mercedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0302</td><td>Nahuel Isai Sosa Castro</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0308 -->
+<h4>DR0308</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0308</td><td>Gerson David Ramirez Philips</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Luis Mario Pozo Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Joleizer Elian Polo Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Marlon De Los Santos Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Cesar Junior Rosario Pozo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Carlos Daniel Carty Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Josè Angel Hernandez Leonardo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Willy Alberto Peguero Leonardo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Keyder Amauris Contreras Thomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Johendri Sariel Zorrilla Mitchell</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Angel Moises Javier Toribio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Dioris Saul Fleming Allen</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Heber Micaias Villalona Gil</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Johandry Castillo Rivera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0308</td><td>Juan Manuel Belen</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0375 -->
+<h4>DR0375</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0375</td><td>Angel Yunier Rodriguez Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Jahir Nahuel Ubiera Liriano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Jeremy Eduardo De la Rosa Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Jhoandel Manuel Silvestre Calderon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Jorge Luis Soriano Morales</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Jose Daniel Rodriguez Trinidad</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Yadiel Bienvenido Sanchez Peguero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Wilber Jose Caraballo Mercedes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Brayan Omar Valdez Peguero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Darwin Sosa Abreu Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Dalian Alexander Mendez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Sergio Enrique Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0375</td><td>Yan Carlos Laureano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0632 -->
+<h4>DR0632</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0632</td><td>José Miguel Sentival Montero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Samuel Montero Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Yohendri Escanio Candio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Angel Elian Aquino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Andri Arturo Escanio Candio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Emmanuel Blanc Masí</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Diosy Escarnio Alfonseca</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Brailin Moises Isa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Angel Nova Montano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Enyel Yadiel Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Yeurys Michael Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Breilin Dariel Bueno Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Nehemias David Pie Medina</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Yerlin Dariel Bastardo Roberto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0632</td><td>Juan David Toussaint</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0820 -->
+<h4>DR0820</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0820</td><td>Dayonel Michael Bautista</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Deilin Francisco Montas Luis</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Eliceo Yedi</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Gelin Junior Gonzalez Marcos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Gepcel Moises Sencion Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Juan Alberto Cespedes Francois</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Marlong Manuel Bonifacio Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Nelvis Nathanael Carmona Rincon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Yariel David Peguero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Bernis Fabriel Almarante de la Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Dilan Emilio Gil</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Esteban Alexander Vizcaino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Luisander David Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0820</td><td>Matias Castro Fernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+ <!-- Equipo DR0830 -->
+<h4>DR0830</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Dauri Arias Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Isaac Sena Torres</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Jose Manuel Hichez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Virgilio Nicolas Castillo Encarnacion</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Alberto Junior Moya</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Salvador Rosario Garcia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Israel Josue Valerio Contrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Noel Alexander Barbino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Enyer Aneudis Santana Decena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Yohan Manuel Escolatico Vargas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Frainer Joab Carvajal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Juan Gabriel Familia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Juan Miguel Javier Castro</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Kennedy Varga</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0830</td><td style="word-wrap: break-word;">Moises Marte Pomuceno</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0852 -->
+<h4>DR0852</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0852</td><td>Brayermin Issac Santana Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Eliezel Adames Mejia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Eidan Rafael Tejera Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Manuel Alexander Disla Valoy</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Angel Elian Beltre Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Dilan De Leon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Breilin Adolfo Castillo De la Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Yunior Sena de los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Leandro Obispo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Lucken Joseph Beacier</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Fraylin Ozuna</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Juan Elias Arias Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0852</td><td>Hector Junor Natera de los Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0901 -->
+<h4>DR0901</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0901</td><td>Ismael Daguis Moleus</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Enmanuel Antonio Rodriguez Vasquez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Jeremias Randiel Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Smerlyn Ramon Carey Eusebio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Dariel Cino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Jesus Jenshel Cordero</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Jose Ignacio De la Rosa Lozala</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Yeremy Bruce Moleus</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Hector Enrique Santana Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0901</td><td>Jean carlós Tomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+  </div>
 </div>
 <!-- ZONA IX -->
-<div class="zona">
-  <h3>ZONA IX</h3>
-
-  <!-- Equipo DR0540 -->
-<h4>DR0540</h4>
-<table>
-  <th style="width: 15%;">Centro</th>
-  <th style="width: 25%;">Jugador</th>
-  <th style="width: 6%; font-size: 0.8rem;">J</th>
-  <th style="width: 6%; font-size: 0.8rem;">H</th>
-  <th style="width: 6%; font-size: 0.8rem;">H4</th>
-  <th style="width: 6%; font-size: 0.8rem;">BB</th>
-  <th style="width: 6%; font-size: 0.8rem;">SO</th>
-  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Deivi Junior Deis De Aza</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Xavier Alejandro Sigaran Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Diasley Laine</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Martin Emanuel Montero Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Enoc Jean Casseis</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Henry Zacaria Tejada</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Jesus Adrian Novoa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Hansel Samuel Campechano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Luis Abraham Jose Guzman</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Wilfredo Peña Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Waynel Polos Luis</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Frandy Athniel Jose Jean</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Yarxiel Thomas Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Freilin Yadiel Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0540</td><td style="word-wrap: break-word;">Angel David Castillo Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
+<div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA IX</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
+ <!-- Equipo DR0525 -->
 <h4>DR0525</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1394,10 +2368,74 @@ table tr:nth-child(odd) {
   <tr><td>DR0525</td><td style="word-wrap: break-word;">Maximiliano Veloz Acevedo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0525</td><td style="word-wrap: break-word;">Yordani Yoel Castro</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
-
+ <!-- Equipo DR0540 -->
+<h4>DR0540</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+  <th style="width: 15%;">Centro</th>
+  <th style="width: 25%;">Jugador</th>
+  <th style="width: 6%; font-size: 0.8rem;">J</th>
+  <th style="width: 6%; font-size: 0.8rem;">H</th>
+  <th style="width: 6%; font-size: 0.8rem;">H4</th>
+  <th style="width: 6%; font-size: 0.8rem;">BB</th>
+  <th style="width: 6%; font-size: 0.8rem;">SO</th>
+  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Deivi Junior Deis De Aza</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Xavier Alejandro Sigaran Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Diasley Laine</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Martin Emanuel Montero Diaz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Enoc Jean Casseis</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Henry Zacaria Tejada</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Jesus Adrian Novoa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Hansel Samuel Campechano</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Luis Abraham Jose Guzman</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Wilfredo Peña Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Waynel Polos Luis</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Frandy Athniel Jose Jean</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Yarxiel Thomas Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Freilin Yadiel Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0540</td><td style="word-wrap: break-word;">Angel David Castillo Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0854 -->
+<h4>DR0854</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0854</td><td>Julio Cadet Philippe</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Max Emiliano Portes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Anthony Elian Lopez Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Neftali Leonardo Marte Zorrilla</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Diosmer Alexis Peralta Del Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Evan Medina Manuel</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Piterson Pascual</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Yohan Santana</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Willian Starlin Momplesi</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Nyker Isaac Pie Bone</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>David Junior Guerrero Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Angelo Mohammed Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Alexis Manuel Santana Morales</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Austin Ederlyn Fortuna Cedeno</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0854</td><td>Obel Alexander Arredondo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
 <!-- Equipo DR0873 -->
 <h4>DR0873</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1425,7 +2463,9 @@ table tr:nth-child(odd) {
 </table>
 <!-- Equipo DR0887 -->
 <h4>DR0887</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1451,7 +2491,44 @@ table tr:nth-child(odd) {
   <tr><td>DR0887</td><td style="word-wrap: break-word;">Soni Alexander Santana Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0887</td><td style="word-wrap: break-word;">Yeremi Alberto Villanueva Abad</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
+<!-- Equipo DR0907 -->
+<h4>DR0907</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0907</td><td>Brendy Santillan Calderon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Henry Miguel Febles Mata</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Jonas Morla Berroa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Daifer Salas Guzmán</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Kevin Williams González Calderón</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Endy Santillan Calderon</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Maiker Miguel Sánchez Williams</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Andres Miguel Cordero Mosquea</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0907</td><td>Kendri Alexander Vizcaino Torrez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+  </div>
+</div>
 <!-- ZONA X -->
+ <div class="jugadores-container">
+  <div class="zona-header-jugador" onclick="toggleZonaJugador(this)">
+    <div class="zona-title">
+      <span>ZONA X</span>
+      <span class="zona-arrow">▼</span>
+    </div>
+  </div>
+  <div class="zona-body-jugador">
 <style>
   .zona {
     margin-bottom: 2rem; /* espacio debajo de toda la zona */
@@ -1459,7 +2536,7 @@ table tr:nth-child(odd) {
   .zona h3 {
     background-color: #012e5e; /* azul bootstrap, puedes cambiar */
     color: white;
-    font-size: 2.0rem; /* texto más grande */
+    font-size: 1.5rem; /* texto más grande */
     padding: 0.75rem 1rem;
     margin: 0 0 1.5rem 0; /* espacio abajo para separar del equipo */
     font-weight: bold;
@@ -1467,13 +2544,108 @@ table tr:nth-child(odd) {
 </style>
 
 <div class="zona">
-  <h3>ZONA X</h3>
-
+ 
+<!-- Equipo DR0382 -->
+<h4>DR0382</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0382</td><td>Eliel Alejandro Rodríguez Lendof</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Samuel Joel Rodriguez Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Gael Alexander Pérez Hernández</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Yuniel Ezequiel Pérez Hernández</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Ian José Pichardo Cortés</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Junior Miguel Cruceta De La Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Jahdiel Elián Encarnación Mercado</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Samuel Alvarez Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Isaac Alemán Pascual</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Rayne Stiff Reyes Sánchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Derek Ulloa Disla</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Germany Martin Franco</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Kevin A. Rodriguez De la Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Luis Daniel Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0382</td><td>Yeiren Raul Peralta Salas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+ </table>
+ <!-- Equipo DR0383 -->
+<h4>DR0383</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Centro</th>
+      <th style="width: 25%;">Jugador</th>
+      <th style="width: 6%; font-size: 0.8rem;">J</th>
+      <th style="width: 6%; font-size: 0.8rem;">H</th>
+      <th style="width: 6%; font-size: 0.8rem;">H4</th>
+      <th style="width: 6%; font-size: 0.8rem;">BB</th>
+      <th style="width: 6%; font-size: 0.8rem;">SO</th>
+      <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+      <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DR0383</td><td>Yanuel De la rosa Baez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Jhordany Ferreira Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Edwin Alexander Nolasco Mella</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Wanderson Perez Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Shainel Jadiel Almonte Gomez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Darlyn Leclerc</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Jose Espinal</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Railyn Marcelino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Darens Alcantara</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Rafael de Jesús Mendez Zarzuela</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Aneudys Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Ronni Alexander Sepulveda Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Dayhan Reylin Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Ricardo Javier Valerio Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0383</td><td>Wilberto Yahir Rijo Betance</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<!-- Equipo DR0501 -->
+<h4>DR0501</h4>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
+  <th style="width: 15%;">Centro</th>
+  <th style="width: 25%;">Jugador</th>
+  <th style="width: 6%; font-size: 0.8rem;">J</th>
+  <th style="width: 6%; font-size: 0.8rem;">H</th>
+  <th style="width: 6%; font-size: 0.8rem;">H4</th>
+  <th style="width: 6%; font-size: 0.8rem;">BB</th>
+  <th style="width: 6%; font-size: 0.8rem;">SO</th>
+  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
+  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Alejandro Delgado De La Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Amelizon De Jesus Gomez Frias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Angel Manuel Lara Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Angel Miguel Reinoso Polonia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Carlos Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Eliezer Cruz Muñoz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Enmanuel Felipe Valdez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Ivan Javier Rosario Tiburcio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jeicob Enmanuel Gomez Fernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jerison Josue Lugo Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jesus Ant Valerio Baez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Junior Alexander Marte Bueno</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Kendi Sanchez Basora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Keydan Andres Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0501</td><td style="word-wrap: break-word;">Yoquelvin Tavarez Mena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
   <!-- Equipo DR0837 -->
   <h4>DR0837</h4>
-  <!-- resto del contenido del equipo -->
-</div>
-<table>
+ <table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1491,10 +2663,13 @@ table tr:nth-child(odd) {
   <tr><td>DR0837</td><td style="word-wrap: break-word;">Peter Jayson Vargas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0837</td><td style="word-wrap: break-word;">Samuel de Jesus Martinez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0837</td><td style="word-wrap: break-word;">Sebastian Bencosme</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>DR0837</td><td style="word-wrap: break-word;">Miguel Malaquias Beato</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 <!-- Equipo DR0875 -->
 <h4>DR0875</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1520,87 +2695,11 @@ table tr:nth-child(odd) {
   <tr><td>DR0875</td><td style="word-wrap: break-word;">Alvin Familia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0875</td><td style="word-wrap: break-word;">Abdiel Taveras Olivia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
-<h4>DR0382</h4>
-<table>
-  <th style="width: 15%;">Centro</th>
-  <th style="width: 25%;">Jugador</th>
-  <th style="width: 6%; font-size: 0.8rem;">J</th>
-  <th style="width: 6%; font-size: 0.8rem;">H</th>
-  <th style="width: 6%; font-size: 0.8rem;">H4</th>
-  <th style="width: 6%; font-size: 0.8rem;">BB</th>
-  <th style="width: 6%; font-size: 0.8rem;">SO</th>
-  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Eliel Alejandro Rodríguez Lendof</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Samuel Joel Rodriguez Rosario</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Gael Alexander Pérez Hernández</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Yuniel Ezequiel Pérez Hernández</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Ian José Pichardo Cortés</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Junior Miguel Cruceta De La Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Jahdiel Elián Encarnación Mercado</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Samuel Alvarez Santos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Isaac Alemán Pascual</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Rayne Stiff Reyes Sánchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Derek Ulloa Disla</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Germany Martin Franco</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Kevin A. Rodriguez De la Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Luis Daniel Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0382</td><td style="word-wrap: break-word;">Yeiren Raul Peralta Salas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
-<!-- Equipo DR0383 -->
-<h4>DR0383</h4>
-<table>
-  <th style="width: 15%;">Centro</th>
-  <th style="width: 25%;">Jugador</th>
-  <th style="width: 6%; font-size: 0.8rem;">J</th>
-  <th style="width: 6%; font-size: 0.8rem;">H</th>
-  <th style="width: 6%; font-size: 0.8rem;">H4</th>
-  <th style="width: 6%; font-size: 0.8rem;">BB</th>
-  <th style="width: 6%; font-size: 0.8rem;">SO</th>
-  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Dayhan Reylin Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Edwin Alexander Nolasco Mella</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Jhordany Ferreira Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Ricardo Javier Valerio Perez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Shainel Jadiel Almonte Gomez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Wanderson Perez Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Wilberto Yahir Rijo Betance</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0383</td><td style="word-wrap: break-word;">Yanuel De la Rosa Baez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
-<!-- Equipo DR0501 -->
-<h4>DR0501</h4>
-<table>
-  <th style="width: 15%;">Centro</th>
-  <th style="width: 25%;">Jugador</th>
-  <th style="width: 6%; font-size: 0.8rem;">J</th>
-  <th style="width: 6%; font-size: 0.8rem;">H</th>
-  <th style="width: 6%; font-size: 0.8rem;">H4</th>
-  <th style="width: 6%; font-size: 0.8rem;">BB</th>
-  <th style="width: 6%; font-size: 0.8rem;">SO</th>
-  <th style="width: 6%; font-size: 0.8rem;">RBI</th>
-  <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Alejandro Delgado De La Rosa</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Amelizon De Jesus Gomez Frias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Angel Manuel Lara Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Angel Miguel Reinoso Polonia</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Carlos Sanchez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Eliezer Cruz Muñoz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Enmanuel Felipe Valdez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Ivan Javier Rosario Tiburcio</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jeicob Enmanuel Gomez Fernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jerison Josue Lugo Jimenez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Jesus Ant Valerio Baez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Junior Alexander Marte Bueno</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Kendi Sanchez Basora</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Keydan Andres Hernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Yoquelvin Tavarez Mena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0501</td><td style="word-wrap: break-word;">Yokervin Taveras Mena</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
-
 <!-- Equipo DR0857 -->
 <h4>DR0857</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1610,17 +2709,28 @@ table tr:nth-child(odd) {
   <th style="width: 6%; font-size: 0.8rem;">SO</th>
   <th style="width: 6%; font-size: 0.8rem;">RBI</th>
   <th style="width: 10%; font-size: 0.8rem;">AVG</th>
-  <tr><td>DR0857</td><td style="word-wrap: break-word;">Albert Isael Herrera Florentino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0857</td><td style="word-wrap: break-word;">Alexander Nathaniel Veras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0857</td><td style="word-wrap: break-word;">Chrisantony Tomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0857</td><td style="word-wrap: break-word;">Juniel Armani Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>DR0857</td><td style="word-wrap: break-word;">Ozzy Rodriguez Luna</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0857</td><td style="word-wrap: break-word;">Robert Sanchez Reyes</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-</table>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Albert Isael Herrera Florentino</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Juniel Armani Gonzalez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Freilyn Antonio Hernandez Cabrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Jarlin Cruz Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Angel Gonzalez Abreu</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Yerickson Cruz Peña</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Carlos Roberto Cruz Ramirez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">John Alfred Abreu Fernandez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Abraham Rodriguez</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Yofreldi Sanchez Cruz</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Yadiel Rafael Francisco</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Alexander Nathaniel Veras</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Chrisantony Tomas</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>DR0857</td><td style="word-wrap: break-word;">Ozzy Rodriguez Luna</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+  </table>
 
 <!-- Equipo DR0879 -->
 <h4>DR0879</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1649,7 +2759,9 @@ table tr:nth-child(odd) {
 
 <!-- Equipo DR0923 -->
 <h4>DR0923</h4>
-<table>
+<table class="mlb-style" style="margin-bottom: 0;">
+        <thead>
+  <tr>
   <th style="width: 15%;">Centro</th>
   <th style="width: 25%;">Jugador</th>
   <th style="width: 6%; font-size: 0.8rem;">J</th>
@@ -1667,7 +2779,8 @@ table tr:nth-child(odd) {
   <tr><td>DR0923</td><td style="word-wrap: break-word;">Yhustin Cabrera</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>DR0923</td><td style="word-wrap: break-word;">Zael Frias Frias</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
-
+  </div>
+</div>
 </section>
 
 <style>
